@@ -1,0 +1,42 @@
+name: HTML quality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "404.html"
+      - ".github/workflows/html-quality.yml"
+
+  pull_request:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "404.html"
+      - ".github/workflows/html-quality.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-html:
+    name: Validate HTML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          package-manager-cache: false
+
+      - name: Validate index.html
+        run: npx --yes htmlhint@1.9.2 index.html
+
+      - name: Validate 404.html
+        run: npx --yes htmlhint@1.9.2 404.html
