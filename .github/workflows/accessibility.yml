@@ -43,7 +43,6 @@ jobs:
       - name: Audit homepage
         run: >
           npx --yes pa11y-ci@4.1.1
-          --runner axe
           --standard WCAG2AA
           --threshold 0
           http://127.0.0.1:8080/index.html
@@ -51,7 +50,6 @@ jobs:
       - name: Audit 404 page
         run: >
           npx --yes pa11y-ci@4.1.1
-          --runner axe
           --standard WCAG2AA
           --threshold 0
           http://127.0.0.1:8080/404.html
