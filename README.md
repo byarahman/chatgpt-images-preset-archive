@@ -48,3 +48,17 @@ The archive does not claim to capture every region-specific experiment, A/B test
 ## Author
 
 Abdul Rahman
+
+## License
+
+The original website implementation in this repository, including its HTML, CSS, and JavaScript, is licensed under the [MIT License](LICENSE).
+
+The archive also references third-party names, trademarks, prompts, screenshots, source material, and other content associated with OpenAI and ChatGPT. Such third-party material remains the property of its respective rights holders and is not licensed under the MIT License by this repository.
+
+## Disclaimer
+
+This is an independent archival project and is not affiliated with, endorsed by, or sponsored by OpenAI.
+
+ChatGPT, OpenAI, and related names and trademarks are the property of their respective owners.
+
+The archive is provided for informational, research, and historical reference purposes. Availability, wording, categorization, and presentation of ChatGPT Images presets may change over time and may vary by account, region, platform, or experiment.
