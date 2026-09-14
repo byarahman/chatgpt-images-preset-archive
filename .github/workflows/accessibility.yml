@@ -6,6 +6,7 @@ on:
     paths:
       - "index.html"
       - "404.html"
+      - ".pa11yci.json"
       - ".github/workflows/accessibility.yml"
 
   pull_request:
@@ -13,6 +14,7 @@ on:
     paths:
       - "index.html"
       - "404.html"
+      - ".pa11yci.json"
       - ".github/workflows/accessibility.yml"
 
   workflow_dispatch:
@@ -40,16 +42,5 @@ jobs:
           python3 -m http.server 8080 &
           sleep 2
 
-      - name: Audit homepage
-        run: >
-          npx --yes pa11y-ci@4.1.1
-          --standard WCAG2AA
-          --threshold 0
-          http://127.0.0.1:8080/index.html
-
-      - name: Audit 404 page
-        run: >
-          npx --yes pa11y-ci@4.1.1
-          --standard WCAG2AA
-          --threshold 0
-          http://127.0.0.1:8080/404.html
+      - name: Run accessibility audit
+        run: npx --yes pa11y-ci@4.1.1
