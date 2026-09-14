@@ -9,7 +9,7 @@
 
 <!-- Primary SEO -->
 <title>ChatGPT Images Preset Archive · 2025–2026</title>
-<meta name="description" content="A searchable archive of 73 verified ChatGPT Images presets, rotating prompts, seasonal ideas, and Images 2.5 templates from 2025–2026.">
+<meta name="description" content="A searchable archive of 73 verified ChatGPT Images presets, templates, seasonal ideas, and historical rotations from 2025–2026, each with a ready-to-use archive-crafted full prompt.">
 <meta name="author" content="Abdul Rahman">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://byarahman.github.io/chatgpt-images-preset-archive/">
@@ -21,7 +21,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="ChatGPT Images Preset Archive">
-<meta property="og:description" content="Explore 73 verified ChatGPT Images presets, templates, seasonal ideas, and historical rotations from 2025–2026.">
+<meta property="og:description" content="Explore 73 verified ChatGPT Images presets and templates from 2025–2026, each with a ready-to-use archive-crafted full prompt.">
 <meta property="og:url" content="https://byarahman.github.io/chatgpt-images-preset-archive/">
 <meta property="og:site_name" content="ChatGPT Images Preset Archive">
 <meta property="og:image" content="https://byarahman.github.io/chatgpt-images-preset-archive/social-preview.png">
@@ -32,7 +32,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ChatGPT Images Preset Archive">
-<meta name="twitter:description" content="Explore 73 verified ChatGPT Images presets, templates, seasonal ideas, and historical rotations from 2025–2026.">
+<meta name="twitter:description" content="Explore 73 verified ChatGPT Images presets and templates from 2025–2026, each with a ready-to-use archive-crafted full prompt.">
 <meta name="twitter:image" content="https://byarahman.github.io/chatgpt-images-preset-archive/social-preview.png">
 <meta name="twitter:image:alt" content="ChatGPT Images Preset Archive — searchable archive of ChatGPT Images presets and templates">
   
@@ -119,7 +119,7 @@ select{height:48px;appearance:none;border:1px solid var(--line);background:var(-
 .clear-filters{display:none;border:0;background:transparent;color:var(--text-2);font-weight:690;font-size:12px;cursor:pointer;padding:8px 0}
 .clear-filters:hover{color:var(--text)}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.card{position:relative;display:flex;flex-direction:column;min-height:310px;padding:19px;border:1px solid var(--line);border-radius:var(--radius-lg);background:linear-gradient(155deg,color-mix(in srgb,var(--panel) 96%,transparent),color-mix(in srgb,var(--panel-2) 88%,transparent));overflow:hidden;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.card{position:relative;display:flex;flex-direction:column;min-height:360px;padding:19px;border:1px solid var(--line);border-radius:var(--radius-lg);background:linear-gradient(155deg,color-mix(in srgb,var(--panel) 96%,transparent),color-mix(in srgb,var(--panel-2) 88%,transparent));overflow:hidden;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
 .card::before{content:"";position:absolute;width:160px;height:160px;right:-74px;top:-74px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--text) 7%,transparent),transparent 70%);pointer-events:none}
 .card:hover{transform:translateY(-3px);border-color:var(--line-strong);box-shadow:var(--shadow-sm)}
 .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
@@ -132,7 +132,21 @@ select{height:48px;appearance:none;border:1px solid var(--line);background:var(-
 .category-label{display:inline-flex;align-items:center;gap:7px;color:var(--muted);font-size:11px;font-weight:700;margin-top:28px}
 .category-dot{width:7px;height:7px;border-radius:50%;background:var(--blue)}
 .card h3{font-size:26px;line-height:1.06;letter-spacing:-.035em;margin:10px 0 11px}
-.desc{color:var(--text-2);font-size:13.5px;line-height:1.55;margin:0 0 24px;flex:1}
+.desc{color:var(--text-2);font-size:13.5px;line-height:1.55;margin:0 0 14px;flex:1}
+.prompt-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 9px;color:var(--muted);font-size:10.5px}
+.prompt-origin{display:inline-flex;align-items:center;gap:6px;font-weight:760;text-transform:uppercase;letter-spacing:.065em;color:var(--blue)}
+.prompt-origin::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px color-mix(in srgb,var(--blue) 12%,transparent)}
+.prompt-length{font-variant-numeric:tabular-nums;white-space:nowrap}
+.prompt-details{border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--bg-elev) 82%,transparent);overflow:hidden;margin-bottom:12px}
+.prompt-details summary{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 11px;cursor:pointer;font-size:11px;font-weight:760;color:var(--text-2);list-style:none;user-select:none}
+.prompt-details summary::-webkit-details-marker{display:none}
+.prompt-details summary::after{content:"+";font-size:16px;font-weight:500;line-height:1;color:var(--muted)}
+.prompt-details[open] summary{border-bottom:1px solid var(--line);color:var(--text)}
+.prompt-details[open] summary::after{content:"−"}
+.prompt-text{padding:12px;color:var(--text-2);font-size:12px;line-height:1.6;white-space:pre-wrap}
+.table-prompt-details{min-width:260px;max-width:460px}
+.table-prompt-details summary{cursor:pointer;font-weight:730;color:var(--text);white-space:nowrap}
+.table-prompt-details .prompt-text{padding:10px 0 0;min-width:320px}
 .card-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:13px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
 .status{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .card-actions{display:flex;gap:7px;margin-top:11px}
@@ -140,7 +154,7 @@ select{height:48px;appearance:none;border:1px solid var(--line);background:var(-
 .smallbtn:hover{background:var(--panel-3);color:var(--text);border-color:var(--line-strong)}
 .smallbtn.primary{background:var(--text);border-color:var(--text);color:var(--bg)}
 .table-view{display:none;overflow:auto;border:1px solid var(--line);border-radius:18px;background:var(--panel);box-shadow:var(--shadow-sm)}
-table{width:100%;border-collapse:separate;border-spacing:0;min-width:980px}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:1120px}
 th,td{padding:14px 15px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:12.5px}
 th{position:sticky;top:0;z-index:2;background:var(--panel-2);color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}
 tbody tr:hover{background:var(--panel-2)} tbody tr:last-child td{border-bottom:0}
@@ -166,7 +180,7 @@ td:first-child{color:var(--muted);font-variant-numeric:tabular-nums} td:nth-chil
 @media(max-width:720px){.shell{width:min(100% - 24px,var(--content))}.topbar{padding-top:14px}.brand span:last-child{display:none}.hero{padding:36px 0 26px}h1{font-size:48px}.hero-panel{padding:18px}.legend{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr);gap:8px}.stat{padding:14px}.controls-wrap{top:0;padding-top:7px}.control-right{overflow:auto;justify-content:flex-start;padding-bottom:1px}select{height:44px}.view-toggle{height:44px}.search input{height:46px}.grid{grid-template-columns:1fr}.card{min-height:278px}.results-head{align-items:flex-start}.source-grid{grid-template-columns:1fr}.footer{flex-direction:column}.back-top{display:none}}
 @media(max-width:440px){h1{font-size:42px}.stats{grid-template-columns:1fr 1fr}.stat b{font-size:24px}.hero-actions .btn{flex:1 1 auto}.search-shortcut kbd{display:none}.search input{padding-right:54px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-@media print{.topbar,.hero-actions,.controls-wrap,.card-actions,.toast,.back-top{display:none!important}body{background:#fff;color:#000}.hero{padding-top:20px}.hero-grid{grid-template-columns:1fr}.hero-panel,.stat,.card,.source{background:#fff!important;color:#000;border-color:#bbb;box-shadow:none}.lede,.desc,.card-meta,.context-note,.sources-lede,.footer{color:#444}.grid{grid-template-columns:repeat(2,1fr)}}
+@media print{.topbar,.hero-actions,.controls-wrap,.card-actions,.toast,.back-top{display:none!important}details>summary{display:none!important}details:not([open])>:not(summary){display:block!important}body{background:#fff;color:#000}.hero{padding-top:20px}.hero-grid{grid-template-columns:1fr}.hero-panel,.stat,.card,.source{background:#fff!important;color:#000;border-color:#bbb;box-shadow:none}.lede,.desc,.card-meta,.context-note,.sources-lede,.footer{color:#444}.grid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -192,7 +206,7 @@ td:first-child{color:var(--muted);font-variant-numeric:tabular-nums} td:nth-chil
       <div>
         <div class="eyebrow"><span class="dot"></span> Verified archive · last checked 14 Sep 2026</div>
         <h1>ChatGPT Images<br>Preset Archive</h1>
-        <p class="lede">Explore built-in inspiration cards, rotating prompts, seasonal ideas and Images 2.5 production templates surfaced across ChatGPT Images from December 2025 through September 2026.</p>
+        <p class="lede">Explore 73 verified ChatGPT Images presets, rotating ideas, seasonal cards and Images 2.5 templates from December 2025 through September 2026 — now with a complete, ready-to-use full prompt for every entry.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#archive">Explore 73 entries <span aria-hidden="true">↓</span></a>
           <a class="btn" href="https://chatgpt.com/images/" target="_blank" rel="noopener">Open ChatGPT Images <span aria-hidden="true">↗</span></a>
@@ -211,14 +225,14 @@ td:first-child{color:var(--muted);font-variant-numeric:tabular-nums} td:nth-chil
       </aside>
     </div>
     <div class="stats" aria-label="Archive summary">
-      <div class="stat"><b>73</b><span>verified rows</span></div>
-      <div class="stat"><b>72</b><span>unique names</span></div>
+      <div class="stat"><b>73</b><span>verified entries</span></div>
+      <div class="stat"><b>73</b><span>ready-to-use full prompts</span></div>
       <div class="stat"><b>5</b><span>archive categories</span></div>
       <div class="stat"><b>2025–26</b><span>coverage window</span></div>
     </div>
     <div class="context-note">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
-      <span><strong>Scope note.</strong> OpenAI says the Images home includes dozens of preset filters and prompts that are updated regularly. This is a verified snapshot, not a claim to capture every region-specific A/B test or extremely short-lived card.</span>
+      <span><strong>Prompt provenance.</strong> Source links verify the preset, template, or card being archived. The long copy-ready prompts here are original archive-crafted expansions based on each verified use case; they are not claimed to be OpenAI’s hidden system prompts or exact internal preset instructions.</span>
     </div>
   </div>
 </header>
@@ -260,23 +274,900 @@ td:first-child{color:var(--muted);font-variant-numeric:tabular-nums} td:nth-chil
   </div>
   <section id="grid" class="grid" aria-labelledby="resultsTitle" aria-live="polite"></section>
   <section id="tableView" class="table-view" aria-labelledby="resultsTitle">
-    <table><thead><tr><th>#</th><th>Name</th><th>Category</th><th>Status</th><th>Evidence</th><th>Prompt idea / use</th><th>Source</th></tr></thead><tbody id="tbody"></tbody></table>
+    <table><thead><tr><th>#</th><th>Name</th><th>Category</th><th>Status</th><th>Evidence</th><th>Ready-to-use prompt</th><th>Source</th></tr></thead><tbody id="tbody"></tbody></table>
   </section>
   <section id="sources" class="sources">
     <div class="section-kicker">Provenance</div><h2>Primary first-party sources</h2>
-    <p class="sources-lede">The archive is anchored to official OpenAI announcements and first-party ChatGPT Images pages, with historical cards preserved where available.</p>
+    <p class="sources-lede">The archive is anchored to official OpenAI announcements and first-party ChatGPT Images pages. These sources verify the names, availability, and use cases; the long ready-to-use prompts are archive-crafted expansions.</p>
     <div class="source-grid">
       <a class="source" href="https://openai.com/index/new-chatgpt-images-is-here/" target="_blank" rel="noopener"><span class="source-label">OpenAI · 16 Dec 2025</span><strong>The new ChatGPT Images is here</strong><span>Original launch presets and confirmation that prompts rotate. ↗</span></a>
       <a class="source" href="https://openai.com/index/introducing-chatgpt-images-2-5/" target="_blank" rel="noopener"><span class="source-label">OpenAI · 8 Sep 2026</span><strong>Introducing ChatGPT Images 2.5</strong><span>Templates, Sketch, precision editing and sharing. ↗</span></a>
       <a class="source" href="https://chatgpt.com/images/" target="_blank" rel="noopener"><span class="source-label">First-party · Current</span><strong>ChatGPT Images</strong><span>Current Images experience and inspiration cards. ↗</span></a>
     </div>
   </section>
-  <footer class="footer"><span>Built from first-party OpenAI / ChatGPT sources and preserved indexed snapshots.</span><span>Interior Design appears twice because it exists as both an inspiration card and production template.</span></footer>
+  <footer class="footer"><span>Preset/template provenance is grounded in first-party OpenAI / ChatGPT sources and preserved indexed snapshots. Full prompts are archive-crafted expansions, not claimed internal OpenAI prompt text.</span><span>Interior Design appears twice because it exists as both an inspiration card and production template.</span></footer>
 </main>
 <div id="toast" class="toast" role="status" aria-live="polite">Copied to clipboard</div>
 <button id="backTop" class="back-top" type="button" aria-label="Back to top" title="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 15 6-6 6 6"/></svg></button>
 <script>
-const items = [{"num": 1, "name": "Sketch", "status": "Current", "evidence": "B", "description": "Draw a rough visual guide in ChatGPT and have it turned into a polished image in a requested style.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 2, "name": "Stickers", "status": "Current", "evidence": "B", "description": "Turn the uploaded subject into a colorful custom illustrated sticker pack.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/ko-KR/images/prompt/stickers/"}, {"num": 3, "name": "’80s Flashback", "status": "Current / trending", "evidence": "B", "description": "Reimagine the uploaded person as a recognizable 1980s snapshot with era-appropriate hair, fashion, accessories, film texture, and date-stamp feel while preserving identity.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/prompt/80s-flashback"}, {"num": 4, "name": "Create a Caricature", "status": "Current", "evidence": "B", "description": "Create an exaggerated but recognizable caricature of the uploaded person/subject.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 5, "name": "Dorm Redesign", "status": "Current", "evidence": "B", "description": "Redesign a dorm/bedroom from an uploaded photo while preserving the room geometry and proposing a cohesive new interior style.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/es-419/images/prompt/dorm_redesign/"}, {"num": 6, "name": "Anime", "status": "Current", "evidence": "B", "description": "Convert the uploaded subject/environment into an energetic, stylized anime scene with strong linework and simplified expressive features.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 7, "name": "Underwater", "status": "Current", "evidence": "B", "description": "Create an ethereal underwater portrait/scene with realistic water, reflections and calm weightless mood.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/prompt/underwater"}, {"num": 8, "name": "Pin Collection", "status": "Current", "evidence": "B", "description": "Create a personalized collection of enamel-style pins inspired by the user/personality/photo.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/am/images/prompt/pin-collection/"}, {"num": 9, "name": "Handwritten Style", "status": "Current", "evidence": "B", "description": "Restyle visual information using a hand-drawn / handwritten annotation aesthetic.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 10, "name": "Interior Design", "status": "Current", "evidence": "B", "description": "Restyle an interior while preserving the room’s basic structure and making the design cohesive.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 11, "name": "Disco Mode", "status": "Current", "evidence": "B", "description": "Transform the subject into a reflective disco-inspired visual treatment while preserving recognizable silhouette/features.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 12, "name": "App Design", "status": "Current", "evidence": "B", "description": "Generate a cohesive mobile-app concept/mockup with a welcome screen, home screen, and product/service screens.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 13, "name": "3D Avatar", "status": "Current", "evidence": "B", "description": "Turn the subject into a glossy stylized 3D designer-toy/avatar treatment.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 14, "name": "Icon Designs", "status": "Current", "evidence": "B", "description": "Abstract the main uploaded subject into a collection of clean vector-like icon/logo variations.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 15, "name": "Fix Lighting", "status": "Current", "evidence": "B", "description": "Correct lighting/exposure while preserving the person, pose, expression, background, composition and overall scene.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 16, "name": "Studio Headshot", "status": "Current on indexed localized pages", "evidence": "B", "description": "Turn a portrait into a polished editorial studio headshot with flattering background and directional lighting.", "category": "Current Images 2.5 inspiration", "category_key": "current", "url": "https://chatgpt.com/images/"}, {"num": 17, "name": "Poster", "status": "Current", "evidence": "B / A-category confirmation", "description": "Posters, event graphics, campaign visuals", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 18, "name": "Interior Design", "status": "Current template", "evidence": "B", "description": "Room/interior concept visualization", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 19, "name": "Logo", "status": "Current", "evidence": "B", "description": "Logo concepts and brand marks", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 20, "name": "Illustration", "status": "Current", "evidence": "B", "description": "Editorial / conceptual illustration", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 21, "name": "Headshot", "status": "Current", "evidence": "B", "description": "Professional/editorial portraits", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 22, "name": "Icon", "status": "Current", "evidence": "B", "description": "UI/product/brand icons", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 23, "name": "Product Photo", "status": "Current", "evidence": "B", "description": "Ecommerce/studio product imagery", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 24, "name": "Merch", "status": "Current", "evidence": "A + B", "description": "Merchandise concepts/mockups", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 25, "name": "Infographic", "status": "Current", "evidence": "B", "description": "Visual information graphics", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 26, "name": "Flyer", "status": "Current", "evidence": "B", "description": "Promotional/event flyers", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 27, "name": "Book Cover", "status": "Current", "evidence": "B", "description": "Book-cover concepts", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 28, "name": "App Mockup", "status": "Current", "evidence": "B", "description": "Mobile application mockups", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 29, "name": "Packaging", "status": "Current", "evidence": "B", "description": "Product packaging concepts", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 30, "name": "Advertisement", "status": "Current", "evidence": "B", "description": "Ad creatives / campaign assets", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 31, "name": "Thumbnail", "status": "Current", "evidence": "B", "description": "Video/content thumbnails", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 32, "name": "Website Mockup", "status": "Current", "evidence": "B", "description": "Web-page/site concepts", "category": "Images 2.5 templates", "category_key": "template", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/"}, {"num": 33, "name": "Summer List", "status": "Earlier rotation", "evidence": "C", "description": "Turn a photo/theme into a playful summer bucket-list / seasonal visual.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 34, "name": "Chibi Stickers", "status": "Earlier rotation", "evidence": "C", "description": "Create a multi-expression chibi sticker pack from the uploaded person.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 35, "name": "Cross-Section", "status": "Earlier rotation", "evidence": "C", "description": "Convert the main subject into a clean educational cutaway/cross-section diagram with labeled internal layers.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/prompt/cross-section"}, {"num": 36, "name": "Makeup Guide", "status": "Earlier rotation", "evidence": "C", "description": "Produce a visual-first makeup analysis infographic using the real uploaded face.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 37, "name": "Enhance Photos", "status": "Earlier rotation", "evidence": "C", "description": "Improve photo clarity/quality while preserving content.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 38, "name": "Mini Me", "status": "Earlier rotation", "evidence": "C", "description": "Create tiny versions of the user/subject interacting around the main subject.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/prompt/mini-me"}, {"num": 39, "name": "Wanderlust", "status": "Earlier rotation", "evidence": "C", "description": "Place/reimagine the user in an aspirational travel-oriented visual.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 40, "name": "Scribble", "status": "Earlier rotation", "evidence": "C", "description": "Redraw the subject in an intentionally rough, playful scribble/doodle style.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/prompt/scribble"}, {"num": 41, "name": "Blueprint Poster", "status": "Earlier rotation", "evidence": "C", "description": "Turn the main subject into a cobalt blueprint-style technical poster with schematic linework and callouts.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 42, "name": "Color Analysis", "status": "Earlier rotation", "evidence": "C", "description": "Produce side-by-side clothing/color comparisons showing which palette suits the portrait best.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 43, "name": "Nighttime Flash", "status": "Earlier rotation", "evidence": "C", "description": "Restyle the photo as raw nightlife/editorial direct-flash photography with deep shadows and film grain.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 44, "name": "Comic", "status": "Earlier rotation", "evidence": "C", "description": "Make a short Sunday-funnies-style comic around an exaggerated visual feature of the uploaded photo.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 45, "name": "Anime Comic", "status": "Earlier rotation", "evidence": "C", "description": "Turn the uploaded person into a short retro manga/anime comic with a simple setup and uplifting twist.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 46, "name": "Fantasy Newspaper", "status": "Earlier rotation", "evidence": "C", "description": "Transform the person into the centerpiece of a whimsical vintage fantasy newspaper front page.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 47, "name": "Bobblehead", "status": "Earlier rotation", "evidence": "C", "description": "Turn the person into a photographed mass-produced bobblehead/collectible toy.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 48, "name": "Infographic Poster", "status": "Earlier rotation", "evidence": "C", "description": "Build a visual poster that explains/organizes information about the subject.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 49, "name": "Improve Your Desk Setup", "status": "Earlier rotation", "evidence": "C", "description": "Redesign the uploaded workspace/desk setup into a cleaner, more functional aesthetic.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 50, "name": "Film Strip", "status": "Earlier rotation", "evidence": "C", "description": "Reframe the subject as cinematic analog film-still imagery / a film-strip sequence.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 51, "name": "Tarot Card", "status": "Earlier rotation", "evidence": "C", "description": "Create a personalized tarot card inspired by the user while using classic hand-drawn tarot visual language.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 52, "name": "Drawing", "status": "Earlier rotation", "evidence": "C", "description": "Turn a childlike/rough drawing into a photoreal scene while preserving its proportions and quirks.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 53, "name": "Hyperreal Wallpaper", "status": "Earlier rotation", "evidence": "C", "description": "Generate a macro, hyperreal, shallow-depth-of-field nature wallpaper with analog imperfection.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 54, "name": "8-bit Game", "status": "Earlier rotation", "evidence": "C", "description": "Reimagine the uploaded subject/theme as a story-driven retro side-scrolling pixel-art game screen.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 55, "name": "Football Figurine", "status": "Earlier rotation", "evidence": "C", "description": "Turn the person into a football/soccer collectible figurine.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 56, "name": "Landscape", "status": "Earlier rotation", "evidence": "C", "description": "Generate a cinematic, film-like landscape with layered depth and negative space.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 57, "name": "Statue", "status": "Earlier rotation", "evidence": "C", "description": "Turn the subject into a detailed neoclassical marble statue in a museum setting.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 58, "name": "Hairstyles", "status": "Earlier rotation", "evidence": "C", "description": "Create a visual hairstyle-analysis comparison using the uploaded portrait.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 59, "name": "Surreal", "status": "Earlier rotation", "evidence": "C", "description": "Reimagine the uploaded subject in a surreal visual treatment.", "category": "Earlier Images 2.0 rotation", "category_key": "historical", "url": "https://chatgpt.com/images/"}, {"num": 60, "name": "Messi Mode", "status": "Yes", "evidence": "B", "description": "“Take a selfie and wear your colors” — football-supporter transformation.", "category": "Seasonal & event-driven", "category_key": "seasonal", "url": "https://chatgpt.com/images/prompt/messi-mode/"}, {"num": 61, "name": "Slam Dunk", "status": "Yes", "evidence": "B", "description": "“Star in a game-winning dunk” — turn the user into a dramatic basketball moment.", "category": "Seasonal & event-driven", "category_key": "seasonal", "url": "https://chatgpt.com/images/prompt/slam-dunk/"}, {"num": 62, "name": "Tennis Serve", "status": "Yes", "evidence": "B", "description": "Capture/reimagine the user in a professional tennis serving sequence.", "category": "Seasonal & event-driven", "category_key": "seasonal", "url": "https://chatgpt.com/images/prompt/tennis-serve/"}, {"num": 63, "name": "Dad Coupons", "status": "Yes", "evidence": "B", "description": "Turn a dad’s photo into personalized coupon-style visuals.", "category": "Seasonal & event-driven", "category_key": "seasonal", "url": "https://chatgpt.com/images/prompt/dad-coupons/"}, {"num": 64, "name": "Past / Present", "status": "Sep 2026", "evidence": "B", "description": "“See yourself in 1999 vs. now.”", "category": "Seasonal & event-driven", "category_key": "seasonal", "url": "https://chatgpt.com/es-419/images/prompt/past-present/"}, {"num": 65, "name": "Good Morning", "status": "Yes", "evidence": "B", "description": "Generate a personalized good-morning image.", "category": "Seasonal & event-driven", "category_key": "seasonal", "url": "https://chatgpt.com/ur/images/prompt/good-morning/"}, {"num": 66, "name": "Movie Poster", "status": "Launch-era", "evidence": "A", "description": "Turn the uploaded people/scene into an old-school cinematic movie poster with title, cast/credits and period styling.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 67, "name": "80s Fitness Instructor", "status": "Launch-era", "evidence": "A", "description": "Reimagine the person as a brightly styled 1980s aerobics/fitness instructor while preserving likeness.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 68, "name": "Glam Doll", "status": "Launch-era", "evidence": "A", "description": "Turn the subject into a highly polished glam-doll / collectible fashion-doll aesthetic.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 69, "name": "Ornament", "status": "Launch-era", "evidence": "A", "description": "Transform the subject into a decorative hanging ornament/keepsake.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 70, "name": "Fashion Ad", "status": "Launch-era", "evidence": "A", "description": "Turn the subject/product into a polished fashion-advertising composition.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 71, "name": "Dress-Up Character", "status": "Launch-era", "evidence": "A", "description": "Reimagine the subject as a dress-up character with styled clothing/accessories.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 72, "name": "Painting", "status": "Launch-era", "evidence": "A", "description": "Restyle the uploaded image as a painting while preserving the important subject details.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}, {"num": 73, "name": "Drink Ad", "status": "Launch-era", "evidence": "A", "description": "Turn the product/subject into a polished beverage-ad composition.", "category": "Launch-era presets", "category_key": "launch", "url": "https://openai.com/index/new-chatgpt-images-is-here/"}];
+const items = [
+  {
+    "num": 1,
+    "name": "Sketch",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Draw a rough visual guide in ChatGPT and have it turned into a polished image in a requested style.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Use my rough sketch as the structural reference and turn it into a polished final image. Preserve the sketch’s overall composition, placement, proportions, camera angle, and key shapes unless a change is necessary for visual coherence. Render it in [desired style: photorealistic / editorial / cinematic / 3D / illustrated / other], with refined materials, believable lighting, intentional color harmony, and clean details. Keep the concept recognizable to the original sketch rather than redesigning it from scratch. Where the sketch is ambiguous, make tasteful choices that support the intended subject and mood. Final image should feel production-ready, cohesive, and visually resolved.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 2,
+    "name": "Stickers",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Turn the uploaded subject into a colorful custom illustrated sticker pack.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/ko-KR/images/prompt/stickers/",
+    "prompt": "Using the uploaded subject as the reference, create a coordinated pack of 6–8 colorful illustrated stickers. Preserve the subject’s recognizable identity, key features, hairstyle, clothing cues, or signature objects while simplifying them into a friendly sticker style. Give each sticker a different pose, expression, or mini-scenario, such as happy, surprised, celebrating, thinking, waving, laughing, and one playful wildcard. Use bold readable shapes, clean outlines, subtle shading, and a consistent visual language across the full pack. Add a neat white sticker border around each design and arrange the stickers on a simple neutral sheet with comfortable spacing. Avoid duplicate poses or cluttered backgrounds.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 3,
+    "name": "’80s Flashback",
+    "status": "Current / trending",
+    "evidence": "B",
+    "description": "Reimagine the uploaded person as a recognizable 1980s snapshot with era-appropriate hair, fashion, accessories, film texture, and date-stamp feel while preserving identity.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/prompt/80s-flashback",
+    "prompt": "Using the uploaded photo as the identity reference, reimagine the person as if the photo were taken in the mid-1980s. Preserve their recognizable facial features, skin tone, expression, and overall identity while updating hair, clothing, accessories, makeup, and styling to feel authentically period-appropriate. Use a candid snapshot composition with warm consumer-film color, soft flash, slight grain, mild color cast, and subtle imperfections rather than a modern polished look. Include a believable retro environment and a small red-orange date stamp in one corner. Keep the result natural and nostalgic, like a real family photo from the era, not a costume parody.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 4,
+    "name": "Create a Caricature",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Create an exaggerated but recognizable caricature of the uploaded person/subject.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Create a polished caricature of the uploaded person or subject. Preserve clear recognizability while exaggerating a few distinctive visual traits—such as hairstyle, expression, face shape, posture, clothing, or signature accessories—in a playful and flattering way. Use confident illustrative linework, expressive proportions, clean color blocking, and subtle dimensional shading. Keep the exaggeration humorous but respectful; do not distort the subject into something grotesque or unrecognizable. Use a simple background that supports the personality of the caricature without competing with it. The final piece should feel like a professional editorial or event caricature rather than a generic cartoon.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 5,
+    "name": "Dorm Redesign",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Redesign a dorm/bedroom from an uploaded photo while preserving the room geometry and proposing a cohesive new interior style.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/es-419/images/prompt/dorm_redesign/",
+    "prompt": "Redesign the uploaded dorm room or bedroom while preserving the existing room geometry, doors, windows, ceiling height, major architectural features, and realistic proportions. Create a cohesive [desired style] interior with a practical student-friendly layout, better storage, comfortable lighting, and visually coordinated furniture, textiles, wall decor, and accessories. Keep the design believable for the actual space and avoid blocking circulation or inventing structural changes that are not possible. Use layered ambient, task, and accent lighting and make the room feel inviting, organized, and lived-in. Retain any existing items the user wants to keep: [items to preserve]. Budget/style constraints: [optional details].",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 6,
+    "name": "Anime",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Convert the uploaded subject/environment into an energetic, stylized anime scene with strong linework and simplified expressive features.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Transform the uploaded person, subject, or environment into a high-quality anime scene while preserving the key identity, pose, composition, and recognizable visual cues from the reference. Use expressive but controlled facial features, confident linework, stylized proportions, cinematic color, and polished cel-style shading. Adapt hair, clothing, and environmental details naturally into the anime visual language without losing what makes the subject recognizable. Add depth with atmospheric perspective, purposeful lighting, and a background that matches the mood: [energetic / romantic / dramatic / cozy / futuristic / other]. Avoid generic character design; the result should feel specifically based on the uploaded reference.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 7,
+    "name": "Underwater",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Create an ethereal underwater portrait/scene with realistic water, reflections and calm weightless mood.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/prompt/underwater",
+    "prompt": "Using the uploaded photo as the identity reference, create a cinematic underwater portrait or scene. Preserve the person’s recognizable facial features, hairstyle, body proportions, clothing cues, and overall identity. Place them naturally beneath clear blue water with realistic light rays, soft caustic reflections, suspended particles, gentle movement in hair and fabric, and believable underwater depth. Use a calm, weightless mood with natural skin tones adapted to the aquatic lighting. Keep the face detailed and readable, with realistic water optics and subtle reflections rather than heavy fantasy effects. Compose the image elegantly with enough negative space and avoid making the subject look distorted by the water.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 8,
+    "name": "Pin Collection",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Create a personalized collection of enamel-style pins inspired by the user/personality/photo.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/am/images/prompt/pin-collection/",
+    "prompt": "Create a personalized enamel-pin collection inspired by the uploaded person, pet, object, hobby, or theme. Design 8–12 distinct pins that capture recognizable traits, favorite objects, symbols, expressions, or inside-joke details from the reference. Use clean simplified shapes, metal outlines, glossy enamel fills, small highlights, and consistent manufacturing-style detail. Vary the silhouettes so the collection feels intentionally curated rather than repetitive. Arrange the pins neatly on a simple backing card or display surface, with realistic scale and subtle shadows. Keep every design legible at small size and avoid overly intricate details that would not translate well to a real enamel pin.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 9,
+    "name": "Handwritten Style",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Restyle visual information using a hand-drawn / handwritten annotation aesthetic.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Restyle the uploaded visual information into a polished hand-drawn, handwritten presentation. Preserve the original meaning, hierarchy, and important facts while translating the content into expressive handwritten headings, hand-drawn arrows, boxes, underlines, icons, sketches, and annotations. Use a consistent marker/pen style with intentional imperfection, comfortable spacing, and clear reading order. Keep all important text accurate and legible. Use [paper / notebook / whiteboard / digital sketch] as the surface and a restrained palette of [colors]. The final image should feel thoughtfully created by a skilled visual note-taker, not messy or randomly doodled.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 10,
+    "name": "Interior Design",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Restyle an interior while preserving the room’s basic structure and making the design cohesive.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Redesign the uploaded interior while preserving the room’s architecture, camera angle, wall positions, doors, windows, and other fixed structural features. Restyle the space in a cohesive [interior style] direction using an intentional material palette, coordinated furniture, appropriate scale, realistic decor, and layered lighting. Improve visual balance and functionality without making impossible structural changes. Keep [items to preserve] unchanged and replace or restyle [items to change]. Use realistic textures, believable reflections, natural shadows, and a lived-in level of styling. The final result should look like a high-end interior visualization of the same real room, not a different space.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 11,
+    "name": "Disco Mode",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Transform the subject into a reflective disco-inspired visual treatment while preserving recognizable silhouette/features.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Transform the uploaded subject into a glamorous disco-inspired scene while preserving their recognizable identity, silhouette, and key features. Use reflective metallic textures, mirrored surfaces, sparkling highlights, dramatic colored lighting, soft haze, and an energetic late-1970s-to-modern-disco atmosphere. Style clothing and accessories to fit the concept without obscuring the person’s face or identity. Add a polished dance-floor or nightclub environment with dimensional lighting and realistic reflections. Keep the composition fashion-forward and editorial rather than costume-like, and balance sparkle with enough visual clarity for the subject to remain the focal point.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 12,
+    "name": "App Design",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Generate a cohesive mobile-app concept/mockup with a welcome screen, home screen, and product/service screens.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Design a cohesive mobile app concept for [product/service name] aimed at [target users]. Create a small set of polished screens that includes a welcome/onboarding screen, a home/dashboard screen, a primary task or product screen, and one supporting detail or profile screen. Establish a clear visual hierarchy, accessible typography, consistent spacing, reusable components, intuitive navigation, and a coherent design system. Use [brand colors/style] and include realistic interface content instead of lorem ipsum. Present the screens as clean UI mockups with consistent device proportions. Prioritize usability and information architecture over decoration, while still making the concept feel distinctive and production-ready.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 13,
+    "name": "3D Avatar",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Turn the subject into a glossy stylized 3D designer-toy/avatar treatment.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded person or character into a polished stylized 3D avatar or designer-toy figure. Preserve recognizable facial features, hairstyle, skin tone, key clothing cues, and personality while simplifying them into a charming premium 3D form. Use smooth high-quality materials, subtle subsurface skin shading, clean geometry, expressive proportions, and soft studio lighting. Keep the pose confident and readable, with a simple background or pedestal that complements the character. Aim for a collectible-quality render—playful and stylized, but not so exaggerated that the person becomes unrecognizable. Optional style direction: [cute / fashion toy / game avatar / clay / glossy vinyl].",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 14,
+    "name": "Icon Designs",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Abstract the main uploaded subject into a collection of clean vector-like icon/logo variations.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Using the uploaded subject, object, brand, or concept as inspiration, create a coordinated collection of 8–12 clean icon designs. Abstract the most recognizable forms into simple, scalable symbols with consistent stroke weight, corner treatment, visual density, and geometric logic. Include a useful range of variations—filled, outline, simplified silhouette, badge, and monogram-style approaches where appropriate—while keeping the system visually unified. Use a limited palette of [colors] and present the icons on a neutral grid with generous spacing. Avoid unnecessary detail; each icon should remain legible and distinctive at small UI sizes.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 15,
+    "name": "Fix Lighting",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Correct lighting/exposure while preserving the person, pose, expression, background, composition and overall scene.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Correct and improve the lighting in the uploaded photo while preserving the person, pose, expression, facial identity, clothing, background, framing, and overall composition. Balance exposure, recover usable highlight and shadow detail, reduce harsh or unflattering color casts, and create natural-looking skin tones. Refine contrast and local light so the subject is clearly separated from the background without making the image look artificially relit. Preserve realistic texture and avoid plastic-looking skin or excessive HDR. Do not change the scene, remove objects, alter body shape, or redesign the environment. The result should look like the same photograph captured under better professional lighting conditions.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 16,
+    "name": "Studio Headshot",
+    "status": "Current on indexed localized pages",
+    "evidence": "B",
+    "description": "Turn a portrait into a polished editorial studio headshot with flattering background and directional lighting.",
+    "category": "Current Images 2.5 inspiration",
+    "category_key": "current",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded portrait into a polished editorial studio headshot. Preserve the person’s exact identity, age, facial structure, skin tone, hairstyle, and natural expression. Use flattering but realistic directional studio lighting, clean catchlights, subtle shadow shaping, and a refined neutral or softly colored background. Keep skin texture natural and professional—no excessive smoothing, reshaping, or beauty-filter effect. Frame the image as a high-quality head-and-shoulders portrait with balanced composition, realistic lens perspective, and appropriate wardrobe presentation. The result should feel suitable for a professional profile, portfolio, press kit, or company website.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 17,
+    "name": "Poster",
+    "status": "Current",
+    "evidence": "B / A-category confirmation",
+    "description": "Posters, event graphics, campaign visuals",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a professional poster for [event/product/campaign/title]. The main message is: [primary message]. Include the exact text: [headline], [supporting copy], [date/time/location or CTA if applicable]. Build a clear hierarchy with a strong focal visual, highly legible typography, intentional spacing, and a cohesive [style/mood] art direction. Use [brand colors/assets] where provided and keep important text accurate. Design for [portrait/landscape] format at [size/aspect ratio]. The poster should communicate the core idea within a few seconds at a distance, while still rewarding closer viewing with polished detail. Avoid overcrowding and keep decorative elements subordinate to the message.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 18,
+    "name": "Interior Design",
+    "status": "Current template",
+    "evidence": "B",
+    "description": "Room/interior concept visualization",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create an interior design concept for [room type] in a [desired style] direction. Work from [uploaded room photo / measurements / written brief] and respect the existing architecture, proportions, windows, doors, and circulation. Develop a cohesive palette for flooring, walls, furniture, textiles, lighting, and decor. Prioritize realistic scale, comfortable movement, functional zoning, and believable material combinations. Include [must-have items] and avoid [materials/colors/items to avoid]. If a reference image is provided, use it for mood and design language without copying it literally. Render the final concept as a polished, realistic interior visualization with natural lighting and convincing textures.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 19,
+    "name": "Logo",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Logo concepts and brand marks",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a professional logo concept for [brand/company name], a [industry/product/service] brand serving [target audience]. The brand should communicate [3–5 traits, e.g. premium, modern, trustworthy, energetic]. Develop a distinctive, memorable mark using [preferred direction: wordmark / monogram / symbol + wordmark / emblem], with typography and geometry that remain legible at small sizes. Preferred colors: [colors]. Avoid: [symbols/styles/colors to avoid]. Keep the design scalable for website, app icon, packaging, print, signage, and social media. Present the primary logo clearly on a neutral background and, if useful, show one simplified secondary mark. Do not use mockup effects that hide the actual logo design.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 20,
+    "name": "Illustration",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Editorial / conceptual illustration",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create an editorial-style illustration about [topic/concept/story]. Communicate the central idea visually rather than simply depicting every sentence literally. Use [illustration style] with a cohesive palette, clear focal point, purposeful composition, and enough negative space for [optional headline/copy]. Include these essential elements: [list]. Avoid: [unwanted imagery or clichés]. The image should feel conceptually intelligent, polished, and publication-ready, with consistent anatomy, perspective, line quality, and texture appropriate to the chosen style. If people are shown, make expressions and gestures support the story. Format: [portrait/landscape/square], intended for [article/social/poster/presentation].",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 21,
+    "name": "Headshot",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Professional/editorial portraits",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a professional headshot of [person / uploaded subject] for [LinkedIn/company website/press/portfolio]. Preserve the person’s exact identity, age, facial structure, skin tone, hairstyle, and natural proportions. Use flattering, realistic lighting with a clean [neutral/office/editorial] background and a confident, approachable expression. Wardrobe direction: [business / smart casual / creative professional]. Keep skin texture natural, avoid heavy retouching, and do not alter body shape or facial features. Use realistic lens perspective and a clean head-and-shoulders crop with enough breathing room around the subject. The final image should look authentically photographed, not AI-stylized.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 22,
+    "name": "Icon",
+    "status": "Current",
+    "evidence": "B",
+    "description": "UI/product/brand icons",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Design a single clean icon for [feature/product/action/concept]. The icon must communicate [meaning] instantly at small sizes. Use a [outline/filled/duotone] style with consistent geometry, balanced negative space, and simple forms that remain legible at 16–24 px. Match these system constraints: stroke weight [value if known], corner radius [value/style], grid [optional], and color palette [colors]. Avoid fine detail, decorative noise, text, and ambiguous metaphors. Present the icon centered on a neutral background and, if helpful, include a small set of 2–3 refined variations that explore the same concept without changing the overall design language.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 23,
+    "name": "Product Photo",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Ecommerce/studio product imagery",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a premium studio product photograph of [product] using the uploaded product image as the exact reference. Preserve the product’s shape, branding, labels, proportions, colors, materials, and distinctive details. Place it in a clean [studio/lifestyle] setup with intentional lighting, realistic contact shadows, accurate reflections, and crisp material rendering. Background: [color/environment]. Mood: [premium/minimal/energetic/natural]. Camera angle: [front/three-quarter/top-down/macro]. Do not invent or alter logos, text, packaging details, or product features. The final image should look suitable for ecommerce, advertising, or a product launch campaign at professional commercial-photography quality.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 24,
+    "name": "Merch",
+    "status": "Current",
+    "evidence": "A + B",
+    "description": "Merchandise concepts/mockups",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a merchandise concept for [brand/event/community] using [logo/message/artwork] as the core visual. Apply the design to [T-shirt/hoodie/tote/cap/other] with a thoughtful placement, scale, and print treatment that works in real production. Style direction: [minimal / streetwear / vintage / premium / playful]. Use [brand colors] and include the exact wording: [text]. Keep typography and artwork readable, avoid placing important elements across seams or folds, and make the design feel intentional rather than like a logo simply pasted onto a garment. Present the merchandise clearly in a clean mockup or flat-lay with believable fabric texture and print behavior.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 25,
+    "name": "Infographic",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Visual information graphics",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a clear, visually engaging infographic about [topic] for [audience]. Use these facts exactly: [paste data/points]. Organize the information into a logical reading sequence with a strong title, 3–6 key sections, concise labels, and charts/diagrams only where they improve understanding. Use [brand/style] with consistent typography, icons, spacing, and color coding. Prioritize accuracy and legibility over decoration; do not invent statistics or alter supplied numbers. Format: [portrait/landscape/square] for [web/social/print/presentation]. The final infographic should communicate the main takeaway at a glance and remain readable when viewed at typical screen size.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 26,
+    "name": "Flyer",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Promotional/event flyers",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Design a promotional flyer for [event/business/offer]. Include the exact information: [headline], [date/time], [location], [price/offer], [contact or CTA], and [additional details]. Create a strong visual hierarchy so the headline, essential information, and call to action are immediately clear. Art direction: [style/mood]. Use [brand colors/logo/assets] where provided, keep all text accurate, and avoid overcrowding. Format the design for [A4/A5/Instagram/other] with safe margins and balanced spacing. Use imagery or illustration that supports the message without reducing readability. The result should feel professionally art-directed and ready for digital sharing or print.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 27,
+    "name": "Book Cover",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Book-cover concepts",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Design a polished book cover for “[book title]” by [author]. Genre: [genre]. Core theme or premise: [brief]. Create a distinctive front-cover concept that communicates the genre and emotional tone without relying on generic stock imagery. Include the title and author name exactly, with strong typographic hierarchy and excellent legibility at thumbnail size. Visual direction: [style/reference/mood]. Use [preferred colors] and avoid [clichés/elements]. Format for [hardcover/paperback/ebook] at [aspect ratio]. Keep enough compositional discipline that the cover feels credible in a real bookstore or online catalog, with imagery and typography integrated as one design.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 28,
+    "name": "App Mockup",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Mobile application mockups",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a polished mobile app mockup for [app/product] aimed at [target audience]. Show [3–5] key screens, including [home], [primary task], [detail/result], and [profile/settings or other]. Establish clear information architecture, intuitive navigation, accessible typography, consistent spacing, and reusable components. Use [brand colors/style] and realistic content rather than filler text. Respect common mobile interaction patterns while giving the interface a distinctive product identity. Present the screens cleanly at consistent device dimensions, with enough context to understand the user flow. Prioritize usability, clarity, and hierarchy over visual effects.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 29,
+    "name": "Packaging",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Product packaging concepts",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Design product packaging for [product name/type] by [brand]. The packaging must communicate [key positioning/benefit] to [target audience]. Include the exact front-facing text: [brand], [product name], [variant], and [required claims]. Visual direction: [premium/minimal/playful/natural/technical/etc.]. Use [materials/form factor: box, pouch, bottle, can, tube] and [preferred colors]. Create a clear shelf hierarchy, legible typography, and a distinctive brand system that can extend to future variants. Do not invent regulatory claims, ingredients, certifications, or barcodes. Present the packaging as a realistic front/three-quarter mockup with believable material, print, and lighting.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 30,
+    "name": "Advertisement",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Ad creatives / campaign assets",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a high-impact advertisement for [product/service/campaign] aimed at [target audience]. Objective: [awareness/conversion/launch/promotion]. Include the exact headline “[headline]”, supporting copy “[copy]”, and CTA “[CTA]”. Use [brand colors/logo/product image] and preserve supplied brand assets accurately. Build a strong focal point, clear message hierarchy, and visual concept that communicates the benefit quickly. Style: [editorial/luxury/energetic/minimal/cinematic/etc.]. Format: [social post/story/banner/print] at [aspect ratio]. Avoid clutter, generic stock-ad aesthetics, and invented product claims. The result should feel like a professionally art-directed campaign creative.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 31,
+    "name": "Thumbnail",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Video/content thumbnails",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Create a compelling thumbnail for [video/topic] designed to remain readable at small size. Main idea: [what the video is about]. Use one clear focal subject, strong contrast, expressive but believable emotion where appropriate, and minimal text—preferably [2–5 words], exactly: “[thumbnail text]”. Keep typography large and separated from busy areas. Style direction: [clean / dramatic / educational / entertainment / tech / other]. Use [brand colors or creator style] and preserve the identity of any uploaded person. Avoid tiny details, excessive arrows, clutter, and misleading imagery. Format as 16:9 and compose with safe space so important elements are not cropped.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 32,
+    "name": "Website Mockup",
+    "status": "Current",
+    "evidence": "B",
+    "description": "Web-page/site concepts",
+    "category": "Images 2.5 templates",
+    "category_key": "template",
+    "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+    "prompt": "Design a modern website mockup for [company/product/service] aimed at [target audience]. Create a polished [homepage/landing page] with a clear hero, value proposition, primary CTA, supporting benefits/features, proof or testimonials, and a strong closing section. Use realistic copy based on this brief: [content]. Establish a consistent visual system for typography, spacing, buttons, cards, imagery, and navigation. Brand direction: [style/colors]. Prioritize accessibility, responsive hierarchy, and scannability; avoid decorative complexity that hurts usability. Present the page at desktop width with a coherent full-page composition and, if space allows, a complementary mobile view.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 33,
+    "name": "Summer List",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn a photo/theme into a playful summer bucket-list / seasonal visual.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded photo, person, family, or theme into a playful “Summer List” visual. Create a cheerful seasonal bucket list featuring 8–12 personalized summer activities inspired by the subject and context. Include short, readable activity labels such as [examples or user-provided ideas], illustrated with small icons, doodles, or photo-inspired mini-scenes. Use bright but cohesive summer colors, sunny textures, and an organized checklist/poster layout. Preserve recognizable people when they appear and keep the overall tone warm, fun, and aspirational. Do not invent sensitive personal details; use only visible or provided context. Make the final design easy to read and suitable for sharing.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 34,
+    "name": "Chibi Stickers",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Create a multi-expression chibi sticker pack from the uploaded person.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Using the uploaded person as the reference, create a coordinated chibi sticker pack with 8–12 different expressions and poses. Preserve recognizable hairstyle, skin tone, clothing cues, accessories, and personality while translating the person into cute chibi proportions with a larger head, compact body, expressive eyes, and simplified features. Include a varied emotional set such as happy, laughing, annoyed, sleepy, excited, heart-eyes, cheering, thinking, shocked, and waving. Use clean linework, consistent coloring, subtle shading, and a white sticker border around each character. Arrange the full set neatly on a simple background with no duplicate expressions.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 35,
+    "name": "Cross-Section",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Convert the main subject into a clean educational cutaway/cross-section diagram with labeled internal layers.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/prompt/cross-section",
+    "prompt": "Turn the main uploaded subject into a clean educational cross-section or cutaway illustration. Preserve the recognizable exterior form while revealing the important internal layers, components, rooms, materials, or mechanisms in a logically chosen section plane. Use precise linework, clear spatial relationships, controlled color coding, and neat callouts where they improve understanding. Keep labels concise and accurate based only on information that is visible or supplied; do not invent technical specifications. Present the subject against a neutral background with professional diagram-like clarity, balancing realism with explanatory simplicity. The final image should be informative enough for a textbook, presentation, or technical poster.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 36,
+    "name": "Makeup Guide",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Produce a visual-first makeup analysis infographic using the real uploaded face.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Using the uploaded face as the exact visual reference, create a personalized makeup guide that demonstrates a cohesive look without changing the person’s facial structure or identity. Show the real face clearly and annotate the recommended placement of [base/bronzer/blush/highlighter/eyeshadow/liner/lip color] with subtle visual overlays or side-by-side steps. Choose colors that complement the visible complexion and requested style: [natural / soft glam / evening / editorial / other]. Keep text concise, readable, and non-medical. Preserve natural skin texture and proportions. The final image should work as a visual tutorial with clear zones, color swatches, and a polished beauty-editorial layout.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 37,
+    "name": "Enhance Photos",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Improve photo clarity/quality while preserving content.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Enhance the uploaded photo while preserving its original content, identity, composition, and moment. Improve perceived clarity, local contrast, white balance, exposure, color consistency, and fine detail without inventing new facial features or textures. Reduce visible noise, compression artifacts, color cast, and mild blur where possible, while avoiding oversharpening, halos, plastic skin, or aggressive HDR. Keep people’s faces, body shapes, clothing, text, and background objects unchanged. If the image is old or faded, restore tonal balance and natural color carefully. The result should look like a cleaner, higher-quality version of the same photograph—not a recreated scene.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 38,
+    "name": "Mini Me",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Create tiny versions of the user/subject interacting around the main subject.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/prompt/mini-me",
+    "prompt": "Create a whimsical “Mini Me” scene using the uploaded person or subject as the identity reference. Keep the main person recognizable at normal scale, then add several tiny versions of the same person interacting naturally around them—climbing, sitting, carrying small objects, posing, or completing playful tasks related to [theme/hobby/context]. Preserve the same facial identity, hairstyle, and recognizable clothing cues across all miniature versions. Use believable scale, perspective, contact shadows, and depth of field so the tiny figures feel physically present in the scene. Keep the composition playful but organized, with each miniature action easy to notice without overwhelming the main subject.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 39,
+    "name": "Wanderlust",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Place/reimagine the user in an aspirational travel-oriented visual.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Using the uploaded person as the reference, create an aspirational travel image that places them naturally in [destination or dream location]. Preserve their recognizable identity, body proportions, skin tone, hairstyle, and expression. Style the wardrobe appropriately for the destination and season: [details]. Use cinematic but believable natural lighting, realistic environmental depth, and authentic architectural or landscape cues. Compose the image like a premium travel-editorial photograph rather than a tourist snapshot, with the person integrated naturally into the scene. Avoid obvious composites, incorrect scale, or stereotypical props. Mood: [adventurous / serene / romantic / luxurious / spontaneous].",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 40,
+    "name": "Scribble",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Redraw the subject in an intentionally rough, playful scribble/doodle style.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/prompt/scribble",
+    "prompt": "Redraw the uploaded subject in an intentionally rough, playful scribble style. Preserve the core silhouette, pose, and recognizable features, but reinterpret them with uneven hand-drawn lines, imperfect proportions, loose hatching, spontaneous marks, and simple blocks of color. The result should feel charmingly unpolished and human-made, like a confident doodle in a sketchbook—not like a polished vector illustration with a scribble filter. Use [pen/crayon/marker/pencil] texture on [paper/background type]. Keep the subject readable despite the looseness, and avoid adding unrelated text or background clutter.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 41,
+    "name": "Blueprint Poster",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn the main subject into a cobalt blueprint-style technical poster with schematic linework and callouts.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded subject into a polished blueprint-style technical poster. Preserve the recognizable outer shape and important components, then render it with precise schematic linework, section details, measurement-like guides, callout arrows, and structured annotations. Use a deep cobalt or navy blueprint background with crisp light cyan/white lines and subtle drafting texture. Include a clear title: “[title]” and only use labels that are supplied or confidently descriptive; do not invent specifications. Organize the layout with a main hero view plus 2–4 smaller detail views or diagrams. The final result should feel like a premium concept-engineering poster while remaining visually readable.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 42,
+    "name": "Color Analysis",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Produce side-by-side clothing/color comparisons showing which palette suits the portrait best.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Create a visual color-analysis comparison using the uploaded portrait. Preserve the person’s exact face, hair, skin tone, and lighting as consistently as possible across the comparison. Show the same person wearing or surrounded by several curated color palettes—such as warm vs cool, muted vs bright, or seasonal groups—so the effect of each palette can be compared fairly. Include concise palette labels and small color swatches. Do not change makeup, face shape, or exposure between versions in ways that bias the comparison. Keep the layout clean and editorial, with neutral background conditions and realistic fabric colors.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 43,
+    "name": "Nighttime Flash",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Restyle the photo as raw nightlife/editorial direct-flash photography with deep shadows and film grain.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Restyle the uploaded photo as a raw nighttime direct-flash editorial photograph. Preserve the subject’s recognizable identity, pose, clothing, and key scene elements. Use a strong on-camera flash look with crisp foreground illumination, deep surrounding shadows, specular highlights, slight red-eye or flash falloff only if natural, and visible analog-style grain. Add subtle motion imperfection, nightlife color spill, and a candid documentary feel while keeping facial details readable. The image should feel like an authentic late-night fashion or party photograph shot on compact film camera, not a glossy studio image. Avoid changing the person’s body or facial structure.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 44,
+    "name": "Comic",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Make a short Sunday-funnies-style comic around an exaggerated visual feature of the uploaded photo.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Create a short 3–4 panel Sunday-funnies-style comic inspired by the uploaded photo or subject. Preserve the person’s recognizable appearance while simplifying them into a consistent illustrated character. Build a simple visual setup, escalation, and punchline around [theme or funny feature], with readable panel-to-panel continuity. Use expressive poses, clean speech bubbles, concise dialogue, and a warm printed-comic aesthetic with limited colors and subtle paper texture. Keep all text accurate and legible. The humor should be playful rather than cruel, and the final strip should feel complete even without additional explanation.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 45,
+    "name": "Anime Comic",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn the uploaded person into a short retro manga/anime comic with a simple setup and uplifting twist.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded person into a short 3–5 panel retro manga/anime comic. Preserve their recognizable hairstyle, facial cues, clothing, and personality across every panel. Create a simple story with a clear setup, small challenge or surprise, and an uplifting or amusing final beat based on [theme]. Use dynamic manga framing, expressive reactions, speed lines or screentone where appropriate, and consistent character design from panel to panel. Keep dialogue concise and highly legible. Use [black-and-white manga / retro color anime] styling and avoid random scene changes that break continuity. The finished page should read naturally in a clear sequence.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 46,
+    "name": "Fantasy Newspaper",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Transform the person into the centerpiece of a whimsical vintage fantasy newspaper front page.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Transform the uploaded person into the centerpiece of a whimsical vintage fantasy newspaper front page. Preserve their recognizable identity while placing them in a fantastical but coherent news event based on [theme/story]. Create a believable old newspaper layout with a masthead, main headline, short subheads, columns, one or two supporting images, and aged paper texture. Keep the visible text concise and readable rather than filling the page with gibberish. Art direction should blend early newspaper illustration/engraving with playful fantasy details. The person should feel naturally integrated as the featured figure, not pasted onto the layout.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 47,
+    "name": "Bobblehead",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn the person into a photographed mass-produced bobblehead/collectible toy.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded person into a photographed collectible bobblehead figure. Preserve their recognizable face, hairstyle, skin tone, signature clothing or uniform, and personality while adapting them into a toy with an oversized head, compact body, and visible spring-like bobblehead construction. Place the figure on a small themed base labeled “[name or title]” if provided. Use realistic painted vinyl/resin materials, tiny manufacturing details, studio product lighting, and believable shadows. Present it like an actual mass-produced collectible photographed for a catalog. Keep the likeness friendly and recognizable without making the face photorealistically human on the toy body.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 48,
+    "name": "Infographic Poster",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Build a visual poster that explains/organizes information about the subject.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Create a polished infographic poster about the uploaded subject or [topic]. Organize the information into a visually structured poster with a strong title, a central hero visual, and 4–6 supporting sections using icons, diagrams, timelines, comparisons, or labeled details as appropriate. Use only facts supplied by the user or clearly visible in the reference; do not invent statistics. Keep text concise and legible, with a consistent grid, typography system, and color palette. The visual style should feel informative and editorial rather than like a dense spreadsheet. Format: [portrait/landscape], intended for [classroom/social/presentation/print].",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 49,
+    "name": "Improve Your Desk Setup",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Redesign the uploaded workspace/desk setup into a cleaner, more functional aesthetic.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Redesign the uploaded desk or workspace into a cleaner, more functional setup while preserving the actual room geometry, desk size, windows, walls, and other fixed constraints. Improve monitor placement, cable management, lighting, storage, ergonomics, and visual organization. Style direction: [minimal / cozy / gaming / creative studio / professional]. Keep [items to preserve] and incorporate [required equipment]. Use realistic product scale, believable wiring, practical reach zones, and layered task/ambient lighting. Avoid impossible floating equipment or changes that would require major construction. The result should look like an achievable upgrade of the same workspace, not a completely different room.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 50,
+    "name": "Film Strip",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Reframe the subject as cinematic analog film-still imagery / a film-strip sequence.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Reframe the uploaded subject as a cinematic analog film-strip sequence. Create 4–6 connected frames that feel like moments from the same scene or short story, preserving the person’s identity, wardrobe, location, and visual continuity across frames. Use authentic film characteristics such as subtle grain, halation, slightly imperfect exposure, natural color variation, and frame borders or sprocket cues. Vary the shot sizes—wide, medium, close-up, detail—while keeping a coherent emotional progression. Mood: [nostalgic / romantic / moody / adventurous / documentary]. Avoid duplicated identical frames and overly heavy vintage filters.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 51,
+    "name": "Tarot Card",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Create a personalized tarot card inspired by the user while using classic hand-drawn tarot visual language.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Create a personalized tarot-style card inspired by the uploaded person or theme. Preserve recognizable features where a person is shown, then reinterpret them through symbolic, hand-drawn tarot visual language. Card title: “[title]”. Theme/meaning: [qualities, archetype, or message]. Include a central figure, 3–5 meaningful symbols related to the theme, an ornamental border, and a restrained mystical palette. Use balanced symmetry or intentional asymmetry, fine illustrative detail, and aged printed texture. Do not copy a specific copyrighted deck; create an original tarot-inspired composition. Keep the title legible and the symbolism visually coherent rather than randomly decorative.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 52,
+    "name": "Drawing",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn a childlike/rough drawing into a photoreal scene while preserving its proportions and quirks.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Use the uploaded childlike or rough drawing as the exact structural reference and turn it into a believable photorealistic scene. Preserve the drawing’s unusual proportions, object placement, poses, colors, and charming quirks instead of “correcting” them into a conventional design. Translate each drawn shape into a plausible real-world material or object while maintaining the original composition. Use realistic lighting, depth, shadows, and textures so the scene feels physically present, but let the imperfect logic of the drawing remain visible. The result should look like the drawing somehow became real—not like a professional redesign loosely inspired by it.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 53,
+    "name": "Hyperreal Wallpaper",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Generate a macro, hyperreal, shallow-depth-of-field nature wallpaper with analog imperfection.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Create a hyperreal wallpaper featuring [nature subject: flower/insect/leaf/water/stone/etc.] photographed at macro scale. Use extremely detailed natural texture, shallow depth of field, soft atmospheric falloff, and a strong focal area balanced by generous negative space for icons or a lock-screen clock. Lighting should feel natural and cinematic, with subtle analog imperfections such as fine grain, gentle bloom, or slight lens character rather than synthetic sharpness. Color palette: [colors/mood]. Format for [phone/desktop] at [aspect ratio]. Avoid text, logos, busy compositions, or obvious repeating patterns.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 54,
+    "name": "8-bit Game",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Reimagine the uploaded subject/theme as a story-driven retro side-scrolling pixel-art game screen.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Reimagine the uploaded subject or theme as a story-driven 8-bit side-scrolling game screen. Preserve recognizable character traits while translating them into a coherent retro pixel-art sprite with a limited palette and crisp pixel grid. Build a playable-looking environment based on [setting], including platforms, obstacles, collectible items, background layers, and a minimal HUD showing [score/hearts/item/etc.]. Create a clear moment of action or story rather than a static portrait. Keep pixel scale consistent across the entire scene and avoid smooth gradients or high-resolution textures that break the 8-bit aesthetic. Present in a classic game-screen aspect ratio.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 55,
+    "name": "Football Figurine",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn the person into a football/soccer collectible figurine.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded person into a collectible football/soccer figurine. Preserve their recognizable face, hairstyle, skin tone, and key identity while adapting them into a stylized small-scale sports figure. Dress the figure in [team colors / custom kit] with number [number] and pose them in a dynamic football action such as dribbling, celebrating, or preparing to shoot. Use realistic painted resin/vinyl materials, a themed display base, and premium product-photography lighting. Do not add unauthorized sponsor logos unless provided. The final image should look like a real collectible sold in a display box or photographed for a catalog.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 56,
+    "name": "Landscape",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Generate a cinematic, film-like landscape with layered depth and negative space.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Generate a cinematic landscape of [location/environment] with strong depth, atmosphere, and intentional composition. Use a clear foreground, midground, and background, with natural perspective and a visually compelling path for the eye. Time of day: [sunrise/golden hour/blue hour/stormy/etc.]. Mood: [serene / epic / mysterious / melancholic]. Use film-like color, realistic light scattering, subtle texture, and enough negative space for [optional use: wallpaper/title]. Keep geological, botanical, architectural, and weather details coherent with the chosen environment. Avoid oversaturated fantasy effects unless explicitly requested.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 57,
+    "name": "Statue",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Turn the subject into a detailed neoclassical marble statue in a museum setting.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Turn the uploaded person or subject into a detailed neoclassical marble statue displayed in a museum or gallery. Preserve the subject’s recognizable facial structure, pose, hairstyle silhouette, and important clothing or accessory cues while translating them into carved stone. Use convincing marble texture, subtle chisel detail, realistic edge wear, and physically plausible drapery or surface treatment. Light the sculpture with soft directional museum lighting that reveals form through highlights and shadow. Place it on a simple pedestal with optional plaque text “[name/title]”. Avoid making the skin look alive; the result should clearly read as a crafted marble sculpture.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 58,
+    "name": "Hairstyles",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Create a visual hairstyle-analysis comparison using the uploaded portrait.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Using the uploaded portrait as the exact identity reference, create a hairstyle comparison board showing [6–9] different hairstyles that could realistically suit the person. Preserve the same face, skin tone, expression, camera angle, and lighting across every variation so only the hair changes. Include a useful range such as [short/medium/long, layered, fringe, textured, tied-back, etc.] based on the user’s preferences. Keep hairlines, texture, volume, and density believable. Add concise labels beneath each style if desired. Do not change makeup, facial structure, clothing, or body. Present the comparisons in a clean salon/editorial grid.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 59,
+    "name": "Surreal",
+    "status": "Earlier rotation",
+    "evidence": "C",
+    "description": "Reimagine the uploaded subject in a surreal visual treatment.",
+    "category": "Earlier Images 2.0 rotation",
+    "category_key": "historical",
+    "url": "https://chatgpt.com/images/",
+    "prompt": "Reimagine the uploaded subject in an original surreal scene while preserving the key identity or recognizable form of the reference. Build the surrealism around one coherent visual idea—such as impossible scale, dreamlike architecture, unexpected material transformation, floating geometry, or a poetic environmental contradiction—rather than random strange objects. Use realistic lighting and perspective so the impossible elements feel convincingly integrated. Mood: [dreamlike / unsettling / elegant / whimsical]. Color direction: [palette]. Keep the composition visually disciplined with one strong focal point, and avoid turning the result into generic fantasy art.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 60,
+    "name": "Messi Mode",
+    "status": "Yes",
+    "evidence": "B",
+    "description": "“Take a selfie and wear your colors” — football-supporter transformation.",
+    "category": "Seasonal & event-driven",
+    "category_key": "seasonal",
+    "url": "https://chatgpt.com/images/prompt/messi-mode/",
+    "prompt": "Using the uploaded selfie as the identity reference, create a high-energy football-supporter portrait in the spirit of “Messi Mode.” Preserve the person’s recognizable face, skin tone, hairstyle, and proportions. Dress them in [team/national colors] with tasteful fan styling such as scarf, jersey-inspired colors, face paint, or stadium accessories, while avoiding unprovided sponsor marks. Place them in or near a packed stadium with believable match-day lighting, crowd atmosphere, and celebratory energy. Keep the user as the clear focal point and make the image feel like a premium sports campaign photograph rather than a costume snapshot. Optional text: [short supporter message].",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 61,
+    "name": "Slam Dunk",
+    "status": "Yes",
+    "evidence": "B",
+    "description": "“Star in a game-winning dunk” — turn the user into a dramatic basketball moment.",
+    "category": "Seasonal & event-driven",
+    "category_key": "seasonal",
+    "url": "https://chatgpt.com/images/prompt/slam-dunk/",
+    "prompt": "Using the uploaded person as the identity reference, place them in a dramatic game-winning basketball dunk moment. Preserve their recognizable face, skin tone, build, and key appearance while styling them in a custom basketball uniform using [colors/number]. Capture the action at peak elevation with believable body mechanics, ball position, rim interaction, arena lighting, motion, crowd depth, and camera perspective. Add subtle sweat, fabric movement, and cinematic sports-photography contrast. The image should feel like a real professional game photograph taken at the decisive final play. Avoid impossible anatomy, extra limbs, distorted hands, or unreadable jersey details.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 62,
+    "name": "Tennis Serve",
+    "status": "Yes",
+    "evidence": "B",
+    "description": "Capture/reimagine the user in a professional tennis serving sequence.",
+    "category": "Seasonal & event-driven",
+    "category_key": "seasonal",
+    "url": "https://chatgpt.com/images/prompt/tennis-serve/",
+    "prompt": "Using the uploaded person as the identity reference, create a professional tennis serving sequence or hero action shot. Preserve their recognizable face, body proportions, and appearance while dressing them in [tennis outfit/colors]. Show convincing serve mechanics: balanced stance, racket grip, ball toss, shoulder rotation, and follow-through appropriate to the chosen moment. Place them on [hard/clay/grass] court with realistic lines, net, stadium or club environment, and natural sports lighting. Use crisp editorial sports photography with subtle motion and depth. Avoid distorted rackets, extra balls, incorrect hand positions, or anatomy that would make the serve physically implausible.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 63,
+    "name": "Dad Coupons",
+    "status": "Yes",
+    "evidence": "B",
+    "description": "Turn a dad’s photo into personalized coupon-style visuals.",
+    "category": "Seasonal & event-driven",
+    "category_key": "seasonal",
+    "url": "https://chatgpt.com/images/prompt/dad-coupons/",
+    "prompt": "Using the uploaded dad’s photo as the visual reference, create a playful personalized coupon sheet. Include [6–10] tear-off or card-style coupons, each featuring a small illustrated or photo-inspired version of dad and a different reward, such as “[Breakfast in bed],” “[Movie night],” “[Car wash],” “[One uninterrupted nap],” or user-provided ideas. Keep his identity recognizable and the tone affectionate, humorous, and family-friendly. Use a cohesive printable design with clear titles, simple icons, dotted cut lines or ticket edges, and highly legible text. Do not invent personal facts; use only supplied coupon ideas or universally generic ones.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 64,
+    "name": "Past / Present",
+    "status": "Sep 2026",
+    "evidence": "B",
+    "description": "“See yourself in 1999 vs. now.”",
+    "category": "Seasonal & event-driven",
+    "category_key": "seasonal",
+    "url": "https://chatgpt.com/es-419/images/prompt/past-present/",
+    "prompt": "Using the uploaded current photo as the identity reference, create a side-by-side “1999 vs. now” comparison. On the left, reimagine the same person as if photographed in 1999, preserving recognizable facial identity while using era-appropriate hairstyle, clothing, accessories, consumer-camera color, flash, and background details. On the right, present a contemporary version with the same general pose and framing for an easy comparison. Keep the two panels visually balanced and label them “1999” and “Now” with clean, legible typography. Make the 1999 side feel authentic and nostalgic, not like a caricature of the era.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 65,
+    "name": "Good Morning",
+    "status": "Yes",
+    "evidence": "B",
+    "description": "Generate a personalized good-morning image.",
+    "category": "Seasonal & event-driven",
+    "category_key": "seasonal",
+    "url": "https://chatgpt.com/ur/images/prompt/good-morning/",
+    "prompt": "Create a warm personalized “Good Morning” image for [recipient/person] using [uploaded photo or theme] as inspiration. Preserve any person’s recognizable identity and build a peaceful morning atmosphere with soft sunrise light, gentle colors, and tasteful details such as [coffee/tea, flowers, window light, landscape, breakfast, etc.]. Include the exact message: “[Good morning message]” in clear, elegant typography with enough contrast to read easily. Keep the composition calm and uncluttered, with the text integrated naturally rather than covering important parts of the image. Format for [WhatsApp/social story/square post] and avoid excessive decorative clichés.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 66,
+    "name": "Movie Poster",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Turn the uploaded people/scene into an old-school cinematic movie poster with title, cast/credits and period styling.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Using the uploaded people or scene as the reference, create an old-school cinematic movie poster for a fictional film titled “[film title].” Preserve the subjects’ recognizable identities while adapting wardrobe, props, and environment to fit [genre/period]. Build a dramatic hand-painted or classic illustrated poster composition with a strong central hierarchy, supporting vignettes, atmospheric lighting, and period-appropriate typography. Include the exact title, actor names [names], and optional credits [credits] as supplied. Keep text readable and do not invent real production credits. The poster should feel like a professionally designed theatrical one-sheet from [chosen era], not a modern photo collage with a vintage filter.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 67,
+    "name": "80s Fitness Instructor",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Reimagine the person as a brightly styled 1980s aerobics/fitness instructor while preserving likeness.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Using the uploaded person as the identity reference, reimagine them as a bright 1980s aerobics/fitness instructor. Preserve their recognizable face, skin tone, and overall identity while styling them with era-appropriate workout fashion—such as colorful leotard or tracksuit, leg warmers, headband, high-top sneakers, and big period hair—based on [preferred colors]. Place them in a retro aerobics studio with geometric patterns, mirrors, neon accents, and warm VHS-era lighting. Capture an energetic but believable fitness pose. Add subtle analog grain and color character while keeping the image polished enough to feel like an authentic 1980s fitness campaign photograph.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 68,
+    "name": "Glam Doll",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Turn the subject into a highly polished glam-doll / collectible fashion-doll aesthetic.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Turn the uploaded person or subject into a highly polished glam-doll / collectible fashion-doll interpretation. Preserve recognizable facial cues, hairstyle, skin tone, signature clothing colors, and personality while translating them into a stylized doll with smooth premium materials and fashion-forward proportions. Outfit direction: [glam / couture / street style / fantasy]. Use carefully designed clothing, accessories, makeup, and hair with consistent miniature scale. Present the doll in a premium studio setup or elegant packaging-inspired display with soft reflections and product lighting. Keep the design sophisticated and collectible rather than toy-like or child-oriented, and avoid losing the subject’s identity.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 69,
+    "name": "Ornament",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Transform the subject into a decorative hanging ornament/keepsake.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Transform the uploaded person, pet, object, or symbol into a decorative hanging ornament or keepsake. Preserve the most recognizable features while adapting the subject into a small crafted object made from [glass / ceramic / metal / carved wood / fabric]. Include a believable hanging loop, ribbon, cap, or attachment point and realistic material behavior such as reflections, glaze, engraving, stitching, or painted detail. Style direction: [holiday / elegant / whimsical / heirloom]. Photograph the ornament in a clean seasonal or neutral setting with soft depth of field and premium product lighting. Keep the design physically plausible as something that could actually be manufactured.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 70,
+    "name": "Fashion Ad",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Turn the subject/product into a polished fashion-advertising composition.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Create a polished fashion advertisement using the uploaded person, garment, accessory, or product as the key reference. Preserve the supplied subject or product accurately while building a strong editorial concept around [brand/message]. Use high-end fashion photography, controlled lighting, confident composition, refined styling, and a clean visual hierarchy. Include exact text only if provided: [headline/brand/CTA]. Color direction: [palette]. Format: [magazine/social/OOH]. Avoid changing garment details, logos, or product construction, and do not overload the image with copy. The final result should feel like a credible luxury or contemporary fashion campaign created by a professional art director.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 71,
+    "name": "Dress-Up Character",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Reimagine the subject as a dress-up character with styled clothing/accessories.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Reimagine the uploaded person or subject as a dress-up character with a coordinated set of clothing and accessories. Preserve recognizable facial identity and body proportions while styling the character in [theme/style/era]. Show either one fully styled hero look or a paper-doll-inspired layout with several interchangeable garments, shoes, hats, bags, and accessories arranged neatly around the character. Keep scale, perspective, and illustration/rendering style consistent across all pieces. Use a clean background and clear visual organization. Avoid random costume combinations; every item should belong to the same coherent fashion concept and be easy to distinguish.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 72,
+    "name": "Painting",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Restyle the uploaded image as a painting while preserving the important subject details.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Restyle the uploaded image as an original painting while preserving the important subject details, composition, pose, and recognizable identity. Painting direction: [oil / watercolor / gouache / acrylic / impressionist / classical portrait / other]. Translate photographic detail into authentic brushwork, pigment texture, edge variation, and painterly light rather than applying a simple digital filter. Keep the chosen medium consistent across skin, clothing, background, and fine details. Use a cohesive palette and preserve the emotional tone of the source image. The final result should feel like a real finished artwork created in the requested medium while remaining clearly based on the uploaded reference.",
+    "prompt_origin": "Archive-crafted"
+  },
+  {
+    "num": 73,
+    "name": "Drink Ad",
+    "status": "Launch-era",
+    "evidence": "A",
+    "description": "Turn the product/subject into a polished beverage-ad composition.",
+    "category": "Launch-era presets",
+    "category_key": "launch",
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "prompt": "Create a polished beverage advertisement for [drink/product] using the uploaded product as the exact reference. Preserve the bottle/can/cup shape, label, logo, colors, cap, typography, and packaging details accurately. Build a premium advertising scene around [campaign concept] using controlled studio lighting, condensation or ice only if appropriate, realistic liquid/material reflections, and a visually strong background in [palette/environment]. Include the exact headline “[headline]” and CTA “[CTA]” only if provided. Emphasize freshness, flavor, or premium positioning without inventing health claims or ingredients. Format for [social/print/banner] and keep the product as the unmistakable focal point.",
+    "prompt_origin": "Archive-crafted"
+  }
+];
 const categoryMeta = {"current": {"label": "Current Images 2.5", "description": "Current inspiration cards surfaced in September 2026."}, "template": {"label": "Images 2.5 Templates", "description": "Production-oriented formats introduced with Images 2.5."}, "historical": {"label": "Earlier Rotation", "description": "Presets preserved from older indexed first-party pages."}, "seasonal": {"label": "Seasonal / Event", "description": "Short-lived or event-driven first-party prompt cards."}, "launch": {"label": "Launch Era", "description": "The eight presets explicitly named at the December 2025 launch."}};
 const categoryAccent = {current:'var(--green)',template:'var(--blue)',historical:'var(--amber)',seasonal:'var(--pink)',launch:'var(--text-2)'};
 let activeCategory='all'; let view='grid';
@@ -286,19 +1177,20 @@ function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;',
 function evidenceClass(ev){return ev.includes('A')?'A':ev.includes('B')?'B':'C';}
 function filtered(){
   const q=search.value.trim().toLowerCase(), ev=evidence.value;
-  let arr=items.filter(x=>{const catOk=activeCategory==='all'||x.category_key===activeCategory; const evOk=ev==='all'||x.evidence.includes(ev); const hay=[x.name,x.status,x.evidence,x.description,x.category].join(' ').toLowerCase(); return catOk&&evOk&&(!q||hay.includes(q));});
+  let arr=items.filter(x=>{const catOk=activeCategory==='all'||x.category_key===activeCategory; const evOk=ev==='all'||x.evidence.includes(ev); const hay=[x.name,x.status,x.evidence,x.description,x.prompt,x.prompt_origin,x.category].join(' ').toLowerCase(); return catOk&&evOk&&(!q||hay.includes(q));});
   if(sort.value==='name') arr.sort((a,b)=>a.name.localeCompare(b.name));
   if(sort.value==='name-desc') arr.sort((a,b)=>b.name.localeCompare(a.name));
   if(sort.value==='current') arr.sort((a,b)=>{const score=x=>x.status.toLowerCase().includes('current')?0:1; return score(a)-score(b)||a.num-b.num;});
   return arr;
 }
 function showToast(message='Copied to clipboard'){toast.textContent=message;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),1400);}
-async function copyIdea(text){try{await navigator.clipboard.writeText(text);showToast();}catch{const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();showToast();}}
+async function copyPrompt(text){try{await navigator.clipboard.writeText(text);showToast('Full prompt copied');}catch{const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();showToast('Full prompt copied');}}
 function cardMarkup(x){
   const label=categoryMeta[x.category_key]?.label||x.category;
-  return `<article class="card"><div class="card-top"><span class="number">#${String(x.num).padStart(2,'0')}</span><div class="badges"><span class="badge ${evidenceClass(x.evidence)}" title="Evidence: ${esc(x.evidence)}">${esc(x.evidence)}</span></div></div><div class="category-label"><span class="category-dot" style="background:${categoryAccent[x.category_key]||'var(--blue)'}"></span>${esc(label)}</div><h3>${esc(x.name)}</h3><p class="desc">${esc(x.description)}</p><div class="card-meta"><span class="status" title="${esc(x.status)}">${esc(x.status)}</span><span>${esc(x.category_key==='launch'?'Launch-era':x.category_key==='historical'?'Archived':'Verified')}</span></div><div class="card-actions"><button class="smallbtn primary" type="button" data-copy="${x.num}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy prompt idea</button>${x.url?`<a class="smallbtn" href="${esc(x.url)}" target="_blank" rel="noopener">View source ↗</a>`:''}</div></article>`;
+  const words=x.prompt.trim().split(/\s+/).length;
+  return `<article class="card"><div class="card-top"><span class="number">#${String(x.num).padStart(2,'0')}</span><div class="badges"><span class="badge ${evidenceClass(x.evidence)}" title="Evidence: ${esc(x.evidence)}">${esc(x.evidence)}</span></div></div><div class="category-label"><span class="category-dot" style="background:${categoryAccent[x.category_key]||'var(--blue)'}"></span>${esc(label)}</div><h3>${esc(x.name)}</h3><p class="desc">${esc(x.description)}</p><div class="prompt-meta"><span class="prompt-origin">${esc(x.prompt_origin)} full prompt</span><span class="prompt-length">${words} words</span></div><details class="prompt-details"><summary>View full prompt</summary><div class="prompt-text">${esc(x.prompt)}</div></details><div class="card-meta"><span class="status" title="${esc(x.status)}">${esc(x.status)}</span><span>${esc(x.category_key==='launch'?'Launch-era':x.category_key==='historical'?'Archived':'Verified')}</span></div><div class="card-actions"><button class="smallbtn primary" type="button" data-copy="${x.num}"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>Copy full prompt</button>${x.url?`<a class="smallbtn" href="${esc(x.url)}" target="_blank" rel="noopener">View source ↗</a>`:''}</div></article>`;
 }
-function tableMarkup(x){return `<tr><td>${x.num}</td><td>${esc(x.name)}</td><td>${esc(x.category)}</td><td>${esc(x.status)}</td><td><span class="badge ${evidenceClass(x.evidence)}">${esc(x.evidence)}</span></td><td>${esc(x.description)}</td><td>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:''}</td></tr>`;}
+function tableMarkup(x){return `<tr><td>${x.num}</td><td>${esc(x.name)}</td><td>${esc(x.category)}</td><td>${esc(x.status)}</td><td><span class="badge ${evidenceClass(x.evidence)}">${esc(x.evidence)}</span></td><td><details class="table-prompt-details"><summary>View full prompt</summary><div class="prompt-text">${esc(x.prompt)}</div></details></td><td>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">Open ↗</a>`:''}</td></tr>`;}
 function render(){
   const arr=filtered(), q=search.value.trim();
   count.textContent=`${arr.length} of ${items.length} entries shown${q?` · search “${q}”`:''}`;
@@ -307,7 +1199,7 @@ function render(){
   resultsTitle.textContent=activeCategory==='all'?'All archive entries':categoryMeta[activeCategory].label;
   if(!arr.length){grid.innerHTML='<div class="empty"><div class="empty-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><h3>No matching presets</h3><p>Try a broader search or reset your filters.</p></div>';tbody.innerHTML='';return;}
   grid.innerHTML=arr.map(cardMarkup).join(''); tbody.innerHTML=arr.map(tableMarkup).join('');
-  grid.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',()=>{const item=items.find(x=>x.num===Number(btn.dataset.copy));if(item)copyIdea(item.description);}));
+  grid.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',()=>{const item=items.find(x=>x.num===Number(btn.dataset.copy));if(item)copyPrompt(item.prompt);}));
 }
 function buildFilters(){
   const counts=Object.fromEntries(Object.keys(categoryMeta).map(k=>[k,items.filter(x=>x.category_key===k).length]));
