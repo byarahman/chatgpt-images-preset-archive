@@ -1,6 +1,6 @@
 # ChatGPT Images Preset Archive
 
-A searchable archive of ChatGPT Images presets, rotating prompts, seasonal ideas, and Images 2.5 templates from 2025–2026.
+A searchable archive of ChatGPT Images presets, rotating prompts, seasonal ideas, and Images 2.5 templates from 2025 - 2026.
 
 ## Live Website
 
