@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://byarahman.github.io/chatgpt-images-preset-archive/sitemap.xml
